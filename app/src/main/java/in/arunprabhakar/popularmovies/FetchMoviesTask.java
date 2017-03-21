@@ -36,7 +36,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
 
     public AsyncResponse delegate;
     private final String LOG_TAG = FetchMoviesTask.class.getSimpleName();
-    private final String API_KEY = "379c9f5b3bb5b595a298c5b3340c59fc";
+    private final String API_KEY = "YOUR-API-HERE";
     private final String MOVIE_POSTER_BASE = "http://image.tmdb.org/t/p/";
     private final String MOVIE_POSTER_SIZE = "w185";
 
@@ -58,7 +58,6 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
         try {
 
             final String BASE_URL = "http://api.themoviedb.org/3/movie/";
-            final String SORT_BY = "";
             final String KEY = "api_key";
             String sortBy = params[0];
 
